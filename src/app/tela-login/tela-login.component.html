@@ -1,0 +1,22 @@
+<mat-card>
+  <h2>Login</h2>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" type="email">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Senha</mat-label>
+      <input matInput formControlName="senha" type="password">
+    </mat-form-field>
+
+    <div *ngIf="erroLogin" class="error-message">{{ erroLogin }}</div>
+
+    <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid">Entrar</button>
+    <button mat-button color="accent" type="button" (click)="irParaCadastro()" style="margin-left: 10px;">
+    Cadastrar
+  </button>
+  </form>
+</mat-card>

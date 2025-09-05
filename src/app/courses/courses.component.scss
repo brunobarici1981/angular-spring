@@ -1,0 +1,31 @@
+.example-spacer {
+  flex: 1 1 auto;
+  font-family: 'Roboto', sans-serif; /* Definindo a fonte para 'Roboto' */
+  font-size: 20px; /* Alterando o tamanho da fonte */
+  font-weight: 800; /* Alterando o peso da fonte */
+  text-shadow: 1px 1px 0 #1e0494,  /* Borda superior esquerda */
+               -1px -1px 0 #a1a17c, /* Borda inferior direita */
+               1px -1px 0 #078f83,  /* Borda superior direita */
+               -1px 1px 0 #49ccb0;
+}
+
+mat-toolbar {
+  background-color: #020c44;
+  color: rgb(12, 11, 11);
+}
+.custom-button {
+  display: inline-flex;      /* Torna o botão um container flexível */
+  justify-content: center;   /* Centraliza o conteúdo horizontalmente */
+  align-items: center;       /* Centraliza o conteúdo verticalmente */
+  font-size: 16px;           /* Tamanho da fonte */
+  padding: 10px 20px;        /* Ajuste de altura e largura do botão */
+  height: 40px;              /* Define a altura do botão */
+  width: auto;               /* Largura ajustada automaticamente com base no conteúdo */
+}
+
+@media (max-width: 600px) {
+  .custom-button {
+    font-size: 14px;  /* Reduz o tamanho da fonte em telas pequenas */
+    padding: 8px 16px;  /* Ajusta o padding */
+  }
+}
